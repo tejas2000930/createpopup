@@ -1,0 +1,71 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+#create {
+  border: none;
+  padding: 8px;
+  color: #FFF;
+  background-color: firebrick;
+  border-radius: 8px;
+}
+
+.alert-container{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.alert {
+  position: relative;
+  background-color: crimson;
+  border: 1px solid white;
+  height: 100px;
+  width: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  color: #FFF;
+  padding: 20px 15px 0 15px;
+  transition: opacity 2s;
+}
+
+.alert span {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <button id="create">Create Alert!</button>
+  <div class="alert-container">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
